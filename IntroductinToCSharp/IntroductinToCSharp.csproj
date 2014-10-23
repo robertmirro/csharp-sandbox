@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>MyNamespace.StringComparison</StartupObject>
+    <StartupObject>static_void_Main_000</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -58,7 +58,7 @@
     <Compile Include="Namespace.cs" />
     <Compile Include="OverloadOperator.cs" />
     <Compile Include="PrivateConstructorTest.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="000_static_void_Main.cs" />
     <Compile Include="Program10.cs" />
     <Compile Include="Program11.cs" />
     <Compile Include="Program12.cs" />

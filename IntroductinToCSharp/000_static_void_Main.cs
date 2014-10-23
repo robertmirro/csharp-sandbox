@@ -1,11 +1,12 @@
 ﻿using System;
 
-class Program
+class static_void_Main_000
 {
     static void Main()
     {
-        Console.WriteLine("Welcome to C# training...");
+        Console.WriteLine("Welcome to C# training (again)...");
         main1();
+        Console.ReadLine();
 
         // Keep the console window open in debug mode.
         //Console.WriteLine("Press any key to exit.");
