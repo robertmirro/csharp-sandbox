@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>static_void_Main_000</StartupObject>
+    <StartupObject>class_library_000</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="000_class_library.cs" />
     <Compile Include="ConstructorTest.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
