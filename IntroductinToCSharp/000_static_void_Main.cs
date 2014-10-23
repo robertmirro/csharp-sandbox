@@ -2,7 +2,7 @@
 
 class static_void_Main_000
 {
-    static void Main()
+    static void Main(string[] args)
     {
         Console.WriteLine("Welcome to C# training (again)...");
         main1();
