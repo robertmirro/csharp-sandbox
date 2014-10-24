@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Program2
+class console_read_write_002
 {
     static void Main()
     {
@@ -13,9 +13,9 @@ class Program2
         // concantination method
         //Console.WriteLine("hello " + UserName);
 
-        // place holder method
+        // place holder method (preferred method)
         //Console.WriteLine("hello again {0}", UserName);
 
-        Console.WriteLine("Hola {0}, {1}", FirstName, LastName);
+        Console.WriteLine("Hola {0} {1}", FirstName, LastName);
     }
 }

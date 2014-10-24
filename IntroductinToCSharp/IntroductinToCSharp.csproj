@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>class_library_000</StartupObject>
+    <StartupObject>build_in_types_003</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -70,7 +70,7 @@
     <Compile Include="Program17.cs" />
     <Compile Include="Program18.cs" />
     <Compile Include="Program19.cs" />
-    <Compile Include="Program2.cs" />
+    <Compile Include="002_console_read_write.cs" />
     <Compile Include="Program20.cs" />
     <Compile Include="Program21.cs" />
     <Compile Include="Program22.cs" />
@@ -81,7 +81,7 @@
     <Compile Include="Program27.cs" />
     <Compile Include="Program28.cs" />
     <Compile Include="Program29.cs" />
-    <Compile Include="Program3.cs" />
+    <Compile Include="003_built_in_types.cs" />
     <Compile Include="Program30.cs" />
     <Compile Include="Program31.cs" />
     <Compile Include="Program32.cs" />
