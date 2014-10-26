@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Program5
+class operators_005
 {
     static void Main()
     {
@@ -51,7 +51,5 @@ class Program5
         number = 10;
         numberIs10 = (number == 10);
         Console.WriteLine("numberIs10 - 3: {0}", numberIs10);
-
-
     }
 }
