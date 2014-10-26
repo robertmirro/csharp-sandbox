@@ -29,13 +29,13 @@ class nullable_types_006
         // cannot implicitly convert non-nullable int to a nullable int
         //ticketsAvailable = (ticketsOnSale.HasValue) ? ticketsOnSale : 0 ;
 
-        // however, can use .value to do conversion because that returns nullable int value
+        // however, can use .Value to do conversion because that returns non-nullable int value
         ticketsAvailable = (ticketsOnSale.HasValue) ? ticketsOnSale.Value : 0;
 
         // we can also explicitly cast nullable int to an int
         ticketsAvailable = (ticketsOnSale.HasValue) ? (int)ticketsOnSale : 0;
 
-        // OR we can use NULL coalescing operator (use value of variable or use 0 if null)
+        // OR we can use NULL coalescing operator (use value of variable OR use 0 if null)
         ticketsAvailable = ticketsOnSale ?? 0;
 
 

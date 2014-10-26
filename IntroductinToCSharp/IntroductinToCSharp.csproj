@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>nullable_types_006</StartupObject>
+    <StartupObject>cast_convert_007</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -92,7 +92,7 @@
     <Compile Include="004_built_in_string_type.cs" />
     <Compile Include="005_operators.cs" />
     <Compile Include="006_nullable_types.cs" />
-    <Compile Include="Program7.cs" />
+    <Compile Include="007_cast_convert.cs" />
     <Compile Include="Program8.cs" />
     <Compile Include="Program9.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

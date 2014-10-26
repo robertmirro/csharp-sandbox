@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Program7
+class cast_convert_007
 {
     static void Main()
     {
