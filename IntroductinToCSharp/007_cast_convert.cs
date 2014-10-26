@@ -21,12 +21,20 @@ class cast_convert_007
 
         Console.WriteLine("ii: {0} (fraction is lost)", ii);
         Console.WriteLine("iii: {0} (fraction is lost)", iii);
+        
+        
+        string s = "444";
+        int sint;
+
+        // can use Convert but NOT cast
+        sint = Convert.ToInt32(s);
+        Console.WriteLine("sint Convert: {0}", sint);
 
         // use parse method
-        string s = "444";
-        int sint = int.Parse(s);
-        Console.WriteLine("sint: {0}", sint);
-
+        sint = int.Parse(s);
+        Console.WriteLine("sint Parse: {0}", sint);
+        
+        // <type>.TryParse()
         string ss = "4448RJM";
         int sint2;
         bool isValidInt = int.TryParse(ss, out sint2);
