@@ -17,11 +17,6 @@ class nullable_types_006
         bool bBool = b.HasValue ? b.Value : false;
         Console.WriteLine("bBool = {0}", bBool);
 
-        
-        // <T>? is shorthand syntax for System.Nullable<T>
-        System.Nullable<int> nullableInt = null;
-        Console.WriteLine("nullableInt.hasValue: {0}", nullableInt.HasValue);
-
 
         int? ticketsOnSale = null;
         int ticketsAvailable;
@@ -32,6 +27,9 @@ class nullable_types_006
         // however, can use .Value to do conversion because that returns non-nullable int value
         ticketsAvailable = (ticketsOnSale.HasValue) ? ticketsOnSale.Value : 0;
 
+        // can also use .GetValueOrDefault(<default value>), defaults to 0 if no default value specified
+        ticketsAvailable = ticketsOnSale.GetValueOrDefault(0);
+
         // we can also explicitly cast nullable int to an int
         ticketsAvailable = (ticketsOnSale.HasValue) ? (int)ticketsOnSale : 0;
 
@@ -39,11 +37,15 @@ class nullable_types_006
         ticketsAvailable = ticketsOnSale ?? 0;
 
 
+        // <T>? is shorthand syntax for System.Nullable<T>
+        System.Nullable<int> nullableInt = null;
+        Console.WriteLine("nullableInt.hasValue: {0}", nullableInt.HasValue);
+
         // The syntax T? is shorthand for Nullable<T>, where T is a value type. The two forms are interchangeable.
         int? null1 = 4;
-        Console.WriteLine("null1={0}, null1.HasValue={1}, null1.GetValueOrDefault()={2}", null1, null1.HasValue, null1.GetValueOrDefault());
+        Console.WriteLine("null1={0}, null1.HasValue={1}, null1.GetValueOrDefault()={2}", null1, null1.HasValue, null1.GetValueOrDefault(8));
 
         Nullable<int> null2 = null;
-        Console.WriteLine("null2={0}, null2.HasValue={1}, null2.GetValueOrDefault()={2}", null2, null2.HasValue, null2.GetValueOrDefault());
+        Console.WriteLine("null2={0}, null2.HasValue={1}, null2.GetValueOrDefault()={2}", null2, null2.HasValue, null2.GetValueOrDefault(48));
     }
 }
