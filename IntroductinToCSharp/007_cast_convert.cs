@@ -27,17 +27,20 @@ class cast_convert_007
         int sint;
 
         // can use Convert but NOT cast
+        //sint = (int)s;
         sint = Convert.ToInt32(s);
         Console.WriteLine("sint Convert: {0}", sint);
 
-        // use parse method
+        // use <type>.Parse method
         sint = int.Parse(s);
         Console.WriteLine("sint Parse: {0}", sint);
         
         // <type>.TryParse()
         string ss = "4448RJM";
-        int sint2;
-        bool isValidInt = int.TryParse(ss, out sint2);
+        int sint2 = 4;  // set default
+        bool isValidInt = int.TryParse(ss, out sint2);  // sint2 = 0 on TryParse fail
+        Console.WriteLine("TryParse sint2: {0}", sint2);
+
         //Console.WriteLine((string)(isValidInt == true ? sint2.ToString() : "Please enter a valid int..."));
         Console.WriteLine((isValidInt == true) ? sint2.ToString() : "Please enter a valid int...");
     }

@@ -37,7 +37,7 @@ class nullable_types_006
         ticketsAvailable = ticketsOnSale ?? 0;
 
 
-        // <T>? is shorthand syntax for System.Nullable<T>
+        // T? is shorthand syntax for System.Nullable<T>
         System.Nullable<int> nullableInt = null;
         Console.WriteLine("nullableInt.hasValue: {0}", nullableInt.HasValue);
 
