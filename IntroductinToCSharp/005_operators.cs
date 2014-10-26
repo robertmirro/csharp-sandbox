@@ -42,12 +42,12 @@ class operators_005
         }
         Console.WriteLine("numberIs10 - 1: {0}", numberIs10);
 
-        // instead of coding like the above, use ternary operator:
+        // ternary operator:
         number = 4;
         numberIs10 = (number == 10) ? true : false;
         Console.WriteLine("numberIs10 - 2: {0}", numberIs10);
 
-        // i also like this method
+        // boolean shortcut assignment
         number = 10;
         numberIs10 = (number == 10);
         Console.WriteLine("numberIs10 - 3: {0}", numberIs10);
