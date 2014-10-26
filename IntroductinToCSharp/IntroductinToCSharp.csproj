@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>build_in_types_003</StartupObject>
+    <StartupObject>built_in_string_type_004</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -89,7 +89,7 @@
     <Compile Include="Program34.cs" />
     <Compile Include="Program35.cs" />
     <Compile Include="Program36.cs" />
-    <Compile Include="Program4.cs" />
+    <Compile Include="004_built_in_string_type.cs" />
     <Compile Include="Program5.cs" />
     <Compile Include="Program6.cs" />
     <Compile Include="Program7.cs" />
