@@ -7,24 +7,25 @@ class cast_convert_007
         // this implicit converstion performed by compiler is allowed
         int i = 10;
         float f = i;
-        Console.WriteLine(i);
+        Console.WriteLine("f: {0}" , f);
 
         // this implicit converstion is not allowed because float can possibly overflow int, as well as losing fraction value
-        float ff = 123.456F;
+        float ff = 123.432F;
         //int ii = ff;
+        Console.WriteLine("ff: {0}", ff);
 
-        // need to do explicit conversion like this using cast operator
+        // need to do explicit conversion via cast operator (cast will NOT throw exception on overflow)
         int ii = (int)ff;
-        // or like this using convert class
+        // OR via convert class (Convert WILL throw exception on overflow)
         int iii = Convert.ToInt32(ff);
-        
-        Console.WriteLine(ii);
-        Console.WriteLine(iii);
+
+        Console.WriteLine("ii: {0} (fraction is lost)", ii);
+        Console.WriteLine("iii: {0} (fraction is lost)", iii);
 
         // use parse method
         string s = "444";
         int sint = int.Parse(s);
-        Console.WriteLine(sint);
+        Console.WriteLine("sint: {0}", sint);
 
         string ss = "4448RJM";
         int sint2;
